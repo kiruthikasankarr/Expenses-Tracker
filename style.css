@@ -1,0 +1,187 @@
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #1b4332;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  margin-right: 0.75rem; 
+}
+
+header h1 {
+  font-size: 1.7rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+header > h1, header > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header > div.summary {
+  margin-left: auto; 
+  display: flex;
+  gap: 1.2rem;
+}
+
+
+.summary {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.summary div {
+  font-size: 0.95rem;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  color: #1b4332;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #1b4332;
+  margin-bottom: 1rem;
+}
+
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-section input,
+.form-section select,
+.form-section button {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form-section input[type="date"] {
+  min-width: 150px;
+}
+
+.form-section button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-section button:hover {
+  background-color: #40916c;
+}
+
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.filter-section-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-section-inline label {
+  color: #1b4332;
+  font-weight: 500;
+}
+
+.filter-section-inline select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #d8f3dc;
+  font-weight: 600;
+  color: #1b4332;
+}
+
+tr:hover {
+  background-color: #f1f3f2;
+}
+
+.delete-btn {
+  background-color: #e63946;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #d00000;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .summary {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .transactions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
