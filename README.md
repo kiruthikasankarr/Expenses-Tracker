@@ -8,7 +8,7 @@ Check it out here: [Live Demo](https://kiruthikasankarr.github.io/Expenses-Track
 Or click the image to visit the live demo:
 
 <a href="https://kiruthikasankarr.github.io/Expenses-Tracker/">
-  <img src="demo.png" alt="Form Screenshot" width="500">
+  <img src="Demo.png" alt="Form Screenshot" width="500">
 </a>
 
 
